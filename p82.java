@@ -8,6 +8,7 @@ Input: mat [4][5] = { {1, 2, 3, 4, 5},
  {1, 3, 5, 7, 9}
  };
 Output: 5*/
+
 class SmallestCommonElement {
     private boolean binarySearch(int[] arr, int low, int high, int target) {
       while (low <= high) {
