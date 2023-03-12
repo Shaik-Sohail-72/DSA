@@ -19,10 +19,8 @@ Expected Auxiliary Space: O(1).
 
 Constraints:
 1 <= |s| <= 10000*/
-class Reverse
-{
-    public static String reverseWord(String str)
-    {
+class Reverse{
+    public static String reverseWord(String str){
         if(str.isEmpty()){
             return str;
         }else{
