@@ -23,15 +23,13 @@ nums.length == n + 1
 All the integers in nums appear only once except for precisely one integer which appears two or more times.*/
 class Solution {
     public int findDuplicate(int[] nums) {
-        int i=0;
-        int j=nums.length-1;
-        while(i<j){
-            if(nums[i]==nums[j]){
-                return nums[i];
+        Arrays.sort(nums);
+        int val=0;
+        for(int i=0;i<nums.length-1;i++){
+            if(nums[i]==nums[i+1]){
+                val=nums[i];
             }
-            i++;
-            j--;
         }
-        return -1;
+        return val;
     }
 }
