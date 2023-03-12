@@ -20,6 +20,8 @@ Expected Auxiliary Space:O(1).
 
 Constraints:
 0 ≤N ≤1018*/
+
+//Using Bit manipulation
 class Solution{
     public static boolean isPowerofTwo(long n){
         int c=0;
@@ -31,6 +33,21 @@ class Solution{
             return true;
         }else{
             return false;
+        }
+    }
+}
+
+// Using Recusrion
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if(n==0){
+            return false;
+        }else if(n==1){
+            return true;
+        }else if(n%2!=0){
+            return false;
+        }else{
+            return isPowerOfTwo(n/2);
         }
     }
 }
