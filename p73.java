@@ -40,8 +40,7 @@ class Solution {
         return f1;
         
         // Recursion
-        if(n<=1)
-        {
+        if(n<=1){
             return n;
         }
         else{
