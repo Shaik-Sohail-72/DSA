@@ -4,7 +4,6 @@ There is only one repeated number in nums, return this repeated number.
 
 You must solve the problem without modifying the array nums and uses only constant extra space.
 
- 
 
 Example 1:
 
