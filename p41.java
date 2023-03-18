@@ -2,16 +2,17 @@
 
 An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
- 
 
 Example 1:
 
 Input: strs = ["eat","tea","tan","ate","nat","bat"]
 Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
 Example 2:
 
 Input: strs = [""]
 Output: [[""]]
+
 Example 3:
 
 Input: strs = ["a"]
@@ -28,8 +29,8 @@ class Solution {
         List<List<String>> mainls=new ArrayList<>();
         Map<String,List<String>> m=new HashMap<>();
         for(int i=0;i<strs.length;i++){
+            String val=strs[i];
             char arr[]=strs[i].toCharArray();
-            String val=new String(arr);
             Arrays.sort(arr);
             String temp=new String(arr);
             m.computeIfAbsent(temp,k->new ArrayList<>()).add(val);
