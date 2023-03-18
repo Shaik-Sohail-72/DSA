@@ -15,18 +15,8 @@ Output:
 3 7
 
 Explanation:
-As according to the offer if you buy 
-one candy you can take at most two 
-more for free. So in the first case, 
-you buy the candy which costs 1 and 
-takes candies worth 3 and 4 for free, 
-also you buy candy worth 2 as well.
-So min cost : 1+2 =3.
-In the second case, you can buy the 
-candy which costs 4 and takes candies 
-worth 1 and 2 for free, also you need 
-to buy candy worth 3 as well. 
-So max cost : 3+4 =7.
+As according to the offer if you buy one candy you can take at most two more for free. So in the first case, you buy the candy which costs 1 and takes candies worth 3 and 4 for free, also you buy candy worth 2 as well.So min cost : 1+2 =3.In the second case, you can buy the candy which costs 4 and takes candies worth 1 and 2 for free, also you need to buy candy worth 3 as well. So max cost : 3+4 =7.
+
 Example 2:
 
 Input: 
@@ -38,12 +28,8 @@ Output:
 1 5
 
 Explanation:
-For minimimum cost buy the candy with
-the cost 1 and get all the other candies
-for free.
-For maximum cost buy the candy with
-the cost 5 and get all other candies
-for free.
+For minimimum cost buy the candy with the cost 1 and get all the other candies for free. For maximum cost buy the candy with the cost 5 and get all other candies for free.
+
 Your Task:  
 You don't need to read input or print anything. Your task is to complete the function candyStore() which takes the array candies[], its size N and an integer K as input parameters and returns the minimum amount and maximum amount of money to buy all candies according to the offer.
 
