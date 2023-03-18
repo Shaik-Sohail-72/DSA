@@ -1,6 +1,5 @@
 /*Given three stacks S1, S2, and S3 of the positive numbers, the task is to find the possible equal maximum sum of the stacks with the removal of top elements allowed. Stacks are represented as an array, and the first index of the array represents the top element of the stack.
 
- 
 
 Example 1:
 
