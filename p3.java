@@ -11,6 +11,7 @@ Explanation:
 As we see there's only one set bit
 and it's in Position 2 and thus the
 Output 2.
+
 Example 2:
 
 Input:
@@ -21,6 +22,7 @@ Explanation:
 5 is represented as "101" in Binary.
 As we see there's two set bits
 and thus the Output -1.
+
 Your Task:
 You don't need to read input or print anything. Your task is to complete the function findPosition() which takes an integer N as input and returns the answer.
 
