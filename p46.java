@@ -9,7 +9,6 @@ Explanation:
 We can flip the 0th bit to 1 to have
 101.
 
-
 Example 2:
 
 Input:
