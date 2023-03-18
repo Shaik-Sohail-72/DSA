@@ -1,5 +1,6 @@
 /*Given an array A of size N of integers. Your task is to find the sum of minimum and maximum element in the array.
 
+
 Example 1:
 
 Input:
@@ -21,20 +22,16 @@ Explanation: min = 1, max = 4. Sum = 1 + 4 = 5
 Your Task:  
 You don't need to read input or print anything. Your task is to complete the function findSum() which takes the array A[] and its size N as inputs and returns the summation of minimum and maximum element of the array.
 
- 
 
 Expected Time Complexity: O(N)
 Expected Auxiliary Space: O(1)
 
- 
 
 Constraints:
 1 <= N <= 105
 -109 <= Ai <= 109*/
-class Solution
-{ 
-    public static int findSum(int A[],int N) 
-    {
+class Solution{ 
+    public static int findSum(int A[],int N) {
         int max=Integer.MIN_VALUE;
     	int min=Integer.MAX_VALUE;
     	for(int i=0;i<N;i++){
