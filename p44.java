@@ -9,13 +9,13 @@ For example, the saying and conversion for digit string "3322251":
 
 Given a positive integer n, return the nth term of the count-and-say sequence.
 
- 
 
 Example 1:
 
 Input: n = 1
 Output: "1"
 Explanation: This is the base case.
+
 Example 2:
 
 Input: n = 4
@@ -52,23 +52,3 @@ class Solution {
         return s;
     }
 }
-/*class Solution {
-    public String countAndSay(int n) {
-        if(n == 1) return "1"; 
-		String s = countAndSay(n-1);
-		StringBuilder str = new StringBuilder(); 
-		int count = 1 , i = 0; 
-		while(i < s.length()){ 
-			char ch = s.charAt(i++);
-			while(i < s.length() && s.charAt(i) == ch){ 
-				while(i < s.length() && s.charAt(i) == ch){ 
-				i++;    
-                count++;
-			}
-			str.append(count).append(ch); 
-			count = 1; 
-		}
-	    return str.toString();
-        }
-    }
-}*/
