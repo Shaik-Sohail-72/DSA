@@ -2,7 +2,6 @@
 
 If there is no common prefix, return an empty string "".
 
- 
 
 Example 1:
 
