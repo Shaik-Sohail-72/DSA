@@ -4,7 +4,6 @@ Recall that the number of set bits an integer has is the number of 1's present w
 
 For example, 21 written in binary is 10101, which has 3 set bits.
  
-
 Example 1:
 
 Input: left = 6, right = 10
@@ -16,6 +15,7 @@ Explanation:
 9  -> 1001 (2 set bits, 2 is prime)
 10 -> 1010 (2 set bits, 2 is prime)
 4 numbers have a prime number of set bits.
+
 Example 2:
 
 Input: left = 10, right = 15
