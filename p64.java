@@ -2,7 +2,6 @@
 
 If there are two middle nodes, return the second middle node.
 
- 
 
 Example 1:
 
