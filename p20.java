@@ -27,32 +27,23 @@ class Solution {
     public void rotate(int[] nums, int k) {
         int n=nums.length;
         k=k%n;
-        int s3=0;
-        int e3=n-1;
-        while(s3<e3){
-            int temp=nums[s3];
-            nums[s3]=nums[e3];
-            nums[e3]=temp;
-            s3++;
-            e3--;
-        }
+        int s0=0;
+        int e0=n-1;
+        rev(nums,s0,e0);
         int s1=0;
         int e1=k-1;
-        while(s1<e1){
-            int temp=nums[s1];
-            nums[s1]=nums[e1];
-            nums[e1]=temp;
-            s1++;
-            e1--;
-        }
+        rev(nums,s1,e1);
         int s2=k;
         int e2=n-1;
-        while(s2<e2){
-            int temp=nums[s2];
-            nums[s2]=nums[e2];
-            nums[e2]=temp;
-            s2++;
-            e2--;
+        rev(nums,s2,e2);
+    }
+    public static void rev(int nums[],int i,int j){
+        while(i<j){
+            int temp=nums[i];
+            nums[i]=nums[j];
+            nums[j]=temp;
+            i++;
+            j--;
         }
     }
 }
