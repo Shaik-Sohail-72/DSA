@@ -2,7 +2,6 @@
 
 In one step, if the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
 
- 
 
 Example 1:
 
