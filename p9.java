@@ -24,21 +24,18 @@ Constraints:
 //Using Bit manipulation
 class Solution{
     public static boolean isPowerofTwo(long n){
-        int c=0;
-        while(n>0){
-            c++;
-            n=n&(n-1);
-        }
-        if(c==1){
-            return true;
-        }else{
+        if(n<=0){
             return false;
         }
+        else if((n&n-1)==0){
+            return true;
+        }
+        return false;
     }
 }
 
-// Using Recusrion
-class Solution {
+// Using Recursion
+class Solution{
     public boolean isPowerOfTwo(int n) {
         if(n==0){
             return false;
