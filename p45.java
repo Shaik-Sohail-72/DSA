@@ -11,7 +11,7 @@ Output: bbb
 Explanation: "bbb" is the second most 
 occurring string with frequency 2.
 
-â€‹Example 2:
+Example 2:
 
 Input: 
 N = 6
