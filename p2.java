@@ -1,6 +1,5 @@
 /*Given an array A containing 2*N+2 positive numbers, out of which 2*N numbers exist in pairs whereas the other two number occur exactly once and are distinct. Find the other two numbers. Return in increasing order.
 
-
 Example 1:
 
 Input: 
@@ -23,18 +22,14 @@ Explanation:
 Your Task:
 You do not need to read or print anything. Your task is to complete the function singleNumber() which takes the array as input parameter and returns a list of two numbers which occur exactly once in the array. The list must be in ascending order.
 
-
 Expected Time Complexity: O(N)
 Expected Space Complexity: O(1)
-
 
 Constraints:
 1 <= length of array <= 106 
 1 <= Elements in array <= 5 * 106*/
-class Solution
-{
-    public int[] singleNumber(int[] nums)
-    {
+class Solution{
+    public int[] singleNumber(int[] nums){
         int sum=0;
         for(int i=0;i<nums.length;i++){
             sum=sum^nums[i];
