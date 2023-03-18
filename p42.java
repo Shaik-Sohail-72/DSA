@@ -14,7 +14,6 @@ Input:
 S = "0111100010"
 Output: 3
  
-
 Your Task:  
 You don't need to read input or print anything. Your task is to complete the function maxSubStr() which takes a string S and returns an integer as output.
 
