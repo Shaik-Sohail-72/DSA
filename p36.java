@@ -14,7 +14,6 @@ If we take the pairings as (1,2), (4,3),
 |1 - 2| + |4 - 3| + |7 - 5| + |8 - 6| = 6.
 It can be shown that this is the minimum sum we can get.
  
-
 Example 2:
 
 Input:
@@ -34,7 +33,6 @@ Your Task:
 
 You don't need to read input or print anything. Your task is to complete the function findMinSum() which takes the arrays A[], B[], and its size N as inputs and returns the minimum sum of the absolute differences of the pairs.
 
- 
 
 Expected Time Complexity: O(N*log(N))
 Expected Auxiliary Space: O(1)*/
