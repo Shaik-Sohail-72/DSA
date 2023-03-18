@@ -38,3 +38,4 @@ class p23{
         System.out.println(Arrays.toString(arr));
     }
 }
+
