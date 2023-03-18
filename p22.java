@@ -1,11 +1,11 @@
 /*Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
 
- 
 
 Example 1:
 
 Input: nums1 = [1,2,2,1], nums2 = [2,2]
 Output: [2]
+
 Example 2:
 
 Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
@@ -19,6 +19,30 @@ Constraints:
 0 <= nums1[i], nums2[i] <= 1000*/
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
+        Set<Integer> s=new HashSet<>();
+        int i=0;
+        int j=0;
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        while(i<nums1.length && j<nums2.length){
+            if(nums1[i]<nums2[j]){
+                i++;
+            }else if(nums1[i]>nums2[j]){
+                j++;
+            }else{
+                s.add(nums1[i]);
+                i++;
+                j++;
+            }
+        }
+        int arr[]=new int[s.size()];
+        int k=0;
+        for(int ele:s){
+            arr[k++]=ele;
+        }
+        return arr;
+    }
+    /*public int[] intersection(int[] nums1, int[] nums2) { 
         Set<Integer> s=new HashSet<>();
         Set<Integer> s2=new HashSet<>();
         for(int i=0;i<nums1.length;i++){
@@ -34,5 +58,5 @@ class Solution {
           intersection[i++] = ele;
         }
         return intersection;
-    }
+    }*/
 }
