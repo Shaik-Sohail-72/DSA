@@ -34,6 +34,5 @@ class Solution{
             }
         }
         return ls;
-        
     }
 }
