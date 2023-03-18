@@ -10,6 +10,7 @@ Output : 7
 Explanation :
 3rd smallest element in the given 
 array is 7.
+
 Example 2:
 
 Input:
@@ -31,8 +32,7 @@ Constraints:
 1 <= arr[i] <= 105
 1 <= K <= N*/
 class Solution{
-    public static int kthSmallest(int[] arr, int l, int r, int k) 
-    { 
+    public static int kthSmallest(int[] arr, int l, int r, int k) { 
         PriorityQueue<Integer> p=new PriorityQueue<>();
         for(int i=0;i<arr.length;i++){
             p.add(arr[i]);
