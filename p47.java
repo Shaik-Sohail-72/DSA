@@ -11,6 +11,7 @@ Output: 1
 Explanation: There are two different
 charactersin aab and xxy, i.e a and b
 with frequency 2and 1 respectively.
+
 Example 2:
 
 Input:
