@@ -5,10 +5,6 @@ Any combination of digits may be used to form the two numbers to be summed.  Lea
 If forming two numbers is impossible (i.e. when n==0) then the "sum" is the value of the only number that can be formed.
 
 
- 
-
- 
-
 Example 1:
 
 Input:
