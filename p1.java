@@ -9,6 +9,7 @@ Output:
 Explanation:
 Binary representation is '110' 
 So the count of the set bit is 2.
+
 Example 2:
 
 Input:
@@ -41,3 +42,4 @@ class Solution {
         return c;*/
     }
 }
+
