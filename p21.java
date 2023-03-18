@@ -16,6 +16,7 @@ Explanation:
 1, 2, 3, 4 and 5 are the
 elements which comes in the union set
 of both arrays. So count is 5.
+
 Example 2:
 
 Input:
