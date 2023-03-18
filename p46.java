@@ -38,5 +38,4 @@ class Solution{
         }
         return Math.min(c1,c2);
     }
-    
 }
