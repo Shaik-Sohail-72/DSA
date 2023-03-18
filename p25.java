@@ -5,6 +5,7 @@ Example 1:
 Input: S = "abba"
 Output: 1
 Explanation: S is a palindrome
+
 Example 2:
 
 Input: S = "abc" 
