@@ -2,7 +2,6 @@
 
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
 
- 
 
 Example 1:
 
