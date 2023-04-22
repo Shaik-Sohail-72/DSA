@@ -19,6 +19,7 @@ Constraints:
 1 <= strs.length <= 200
 0 <= strs[i].length <= 200
 strs[i] consists of only lowercase English letters.*/
+
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         String rstr = strs[0];
@@ -41,6 +42,53 @@ class Solution {
             }else{
                 break;
             }
+        }
+        return res;
+    }
+}
+
+// Another Approach Using Trie
+class TrieNode{
+    TrieNode children[];
+    int freq;
+    TrieNode(){
+        children=new TrieNode[26];
+        for(int i=0;i<26;i++){
+            children[i]=null;
+        }
+        freq=0;
+    }
+}
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        TrieNode root=new TrieNode();
+        String ans="";
+        for(int i=0;i<strs.length;i++){
+            insert(strs[i],root);
+        }
+        return find(strs[0],root,strs);
+    }
+    public static void insert(String word,TrieNode root){
+        TrieNode curr=root;
+        for(int i=0;i<word.length();i++){
+            int idx=word.charAt(i)-'a';
+            if(curr.children[idx]==null){
+                curr.children[idx]=new TrieNode();
+            }
+            curr=curr.children[idx];
+            curr.freq++;
+        }
+    }
+    public static String find(String key,TrieNode root,String[] strs){
+        TrieNode curr=root;
+        String res="";
+        for(int i=0;i<key.length();i++){
+            int idx=key.charAt(i)-'a';
+            curr=curr.children[idx];
+            if(curr.freq<strs.length){
+                break;
+            }
+            res+=key.charAt(i);
         }
         return res;
     }
