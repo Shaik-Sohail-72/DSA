@@ -24,7 +24,6 @@ You don't need to read or print anyhting. Your task is to complete the function 
 
 Expected Time Complexity: O(n*m)
 Expected Space Compelxity: O(n)
- 
 
 Constraints:
 1 <= n <= 100
