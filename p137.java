@@ -4,7 +4,6 @@ A critical connection is a connection that, if removed, will make some servers u
 
 Return all critical connections in the network in any order.
 
- 
 
 Example 1:
 
