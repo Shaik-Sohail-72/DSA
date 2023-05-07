@@ -71,23 +71,25 @@ class Solution {
         while(!q.isEmpty()){
             int s=q.size();
             rotcnt+=s;
-            for(int i=0;i<s;i++){
+            for(int k=0;k<s;k++){
                 Pair curr=q.remove();
-                if(isValid(grid,curr.i-1,curr.j) && grid[curr.i-1][curr.j]==1){
-                    grid[curr.i-1][curr.j]=2;
-                    q.add(new Pair(curr.i-1,curr.j));
+				int i=curr.i;
+				int j=curr.j;
+                if(isValid(grid,i-1,j) && grid[i-1][j]==1){
+                    grid[i-1][j]=2;
+                    q.add(new Pair(i-1,j));
                 }
-                if(isValid(grid,curr.i,curr.j+1) && grid[curr.i][curr.j+1]==1){
-                    grid[curr.i][curr.j+1]=2;
-                    q.add(new Pair(curr.i,curr.j+1));
+                if(isValid(grid,i,j+1) && grid[i][j+1]==1){
+                    grid[i][j+1]=2;
+                    q.add(new Pair(i,j+1));
                 }
-                if(isValid(grid,curr.i+1,curr.j) && grid[curr.i+1][curr.j]==1){
-                    grid[curr.i+1][curr.j]=2;
-                    q.add(new Pair(curr.i+1,curr.j));
+                if(isValid(grid,i+1,j) && grid[i+1][j]==1){
+                    grid[i+1][j]=2;
+                    q.add(new Pair(i+1,j));
                 }
-                if(isValid(grid,curr.i,curr.j-1) && grid[curr.i][curr.j-1]==1){
-                    grid[curr.i][curr.j-1]=2;
-                    q.add(new Pair(curr.i,curr.j-1));
+                if(isValid(grid,i,j-1) && grid[i][j-1]==1){
+                    grid[i][j-1]=2;
+                    q.add(new Pair(i,j-1));
                 }
             }
             if(!q.isEmpty()){
