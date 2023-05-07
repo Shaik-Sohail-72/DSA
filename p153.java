@@ -55,35 +55,35 @@ class Solution {
         }
         return true;
     }
-    public static void dfs(int mat[][],boolean vis[][],int r,int c,String path,int tr,int tc,ArrayList<String> ls){
-        if(mat[r][c]==0 && r==0 && c==0){
+    public static void dfs(int mat[][],boolean vis[][],int i,int j,String path,int tr,int tc,ArrayList<String> ls){
+        if(mat[i][j]==0 && i==0 && j==0){
             return;
         }
-        if(r==tr && c==tc){
+        if(i==tr && j==tc){
             if(!ls.contains(path)){
                 ls.add(path);
             }
             return;
         }
-        if(isValid(mat,r-1,c) && vis[r-1][c]==false && mat[r-1][c]==1){
-            vis[r][c]=true;
-            dfs(mat,vis,r-1,c,path+"U",tr,tc,ls);
-            vis[r][c]=false;
+        if(isValid(mat,i-1,j) && vis[i-1][j]==false && mat[i-1][j]==1){
+            vis[i][j]=true;
+            dfs(mat,vis,i-1,j,path+"U",tr,tc,ls);
+            vis[i][j]=false;
         }
-        if(isValid(mat,r,c+1) && vis[r][c+1]==false && mat[r][c+1]==1){
-            vis[r][c]=true;
-            dfs(mat,vis,r,c+1,path+"R",tr,tc,ls);
-            vis[r][c]=false;
+        if(isValid(mat,i,j+1) && vis[i][j+1]==false && mat[i][j+1]==1){
+            vis[i][j]=true;
+            dfs(mat,vis,i,j+1,path+"R",tr,tc,ls);
+            vis[i][j]=false;
         }
-        if(isValid(mat,r+1,c) && vis[r+1][c]==false && mat[r+1][c]==1){
-            vis[r][c]=true;
-            dfs(mat,vis,r+1,c,path+"D",tr,tc,ls);
-            vis[r][c]=false;
+        if(isValid(mat,i+1,j) && vis[i+1][j]==false && mat[i+1][j]==1){
+            vis[i][j]=true;
+            dfs(mat,vis,i+1,j,path+"D",tr,tc,ls);
+            vis[i][j]=false;
         }
-        if(isValid(mat,r,c-1) && vis[r][c-1]==false && mat[r][c-1]==1){
-            vis[r][c]=true;
-            dfs(mat,vis,r,c-1,path+"L",tr,tc,ls);
-            vis[r][c]=false;
+        if(isValid(mat,i,j-1) && vis[i][j-1]==false && mat[i][j-1]==1){
+            vis[i][j]=true;
+            dfs(mat,vis,i,j-1,path+"L",tr,tc,ls);
+            vis[i][j]=false;
         }
     }
 }
