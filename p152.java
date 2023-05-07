@@ -52,19 +52,19 @@ class Solution {
         }
         return true;
     }
-    public static void dfs(char[][] grid,boolean vis[][],int r,int c){
-        vis[r][c]=true;
-        if(isValid(grid,r-1,c) && vis[r-1][c]==false && grid[r-1][c]=='1'){
-            dfs(grid,vis,r-1,c);
+    public static void dfs(char[][] grid,boolean vis[][],int i,int j){
+        vis[i][j]=true;
+        if(isValid(grid,i-1,j) && vis[i-1][j]==false && grid[i-1][j]=='1'){
+            dfs(grid,vis,i-1,j);
         }
-        if(isValid(grid,r,c+1) && vis[r][c+1]==false && grid[r][c+1]=='1'){
-            dfs(grid,vis,r,c+1);
+        if(isValid(grid,i,j+1) && vis[i][j+1]==false && grid[i][j+1]=='1'){
+            dfs(grid,vis,i,j+1);
         }
-        if(isValid(grid,r+1,c) && vis[r+1][c]==false && grid[r+1][c]=='1'){
-            dfs(grid,vis,r+1,c);
+        if(isValid(grid,i+1,j) && vis[i+1][j]==false && grid[i+1][j]=='1'){
+            dfs(grid,vis,i+1,j);
         }
-        if(isValid(grid,r,c-1) && vis[r][c-1]==false && grid[r][c-1]=='1'){
-            dfs(grid,vis,r,c-1);
+        if(isValid(grid,i,j-1) && vis[i][j-1]==false && grid[i][j-1]=='1'){
+            dfs(grid,vis,i,j-1);
         }
     }
 }
