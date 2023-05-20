@@ -39,10 +39,9 @@ class Solution {
             else if(!Character.isLetterOrDigit(s.charAt(end))){
                 end--;
             }
-            else{
-                if(Character.toLowerCase(s.charAt(start))!=Character.toLowerCase(s.charAt(end))){
-                    return false;
-                }
+            else if(Character.toLowerCase(s.charAt(start))!=Character.toLowerCase(s.charAt(end))){
+                return false;
+            }else{
                 start++;
                 end--;
             }
@@ -50,4 +49,3 @@ class Solution {
         return true;
     }
 }
-
