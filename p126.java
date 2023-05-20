@@ -29,7 +29,7 @@ Follow up: Can you solve this problem in O(n) time complexity?*/
 // count nodes of the trie. 
 // :- total number of nodes = count of unique prefix
 
-class p125{
+class p126{
     static class Node{
         Node children[];
         boolean eow;
@@ -62,7 +62,7 @@ class p125{
         Node curr=root;
         for(int i=0;i<26;i++){
             if(curr.children[i]!=null){
-                countUnique(root.children[i]);
+                countUnique(curr.children[i]);
                 total++;
             }
         }
