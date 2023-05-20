@@ -43,7 +43,6 @@ class Solution {
                 temp=temp&(temp-1);
             }
             arr[i]=c;
-            c=0;
         }
         return arr;
     }
